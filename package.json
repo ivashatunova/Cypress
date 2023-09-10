@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open:desktop": "cypress open --config-file cypress.config.js",
+    "cy:open:mobile": "cypress open --config-file cypress-mobile.config.js",
+    "cy:run:desktop": "cypress run --config-file cypress.config.js",
+    "cy:run:mobile": "cypress run --config-file cypress-mobile.config.js",
+    "cy:open:desktop:firefox": "cypress open --config-file cypress.config.js --browser firefox",
+    "cy:open:mobile:firefox": "cypress open --config-file cypress-mobile.config.js --browser firefox",
+    "cy:run:desktop:firefox": "cypress run --config-file cypress.config.js --browser firefox",
+    "cy:run:mobile:firefox": "cypress run --config-file cypress-mobile.config.js --browser firefox"
   },
   "author": "",
   "license": "ISC",
